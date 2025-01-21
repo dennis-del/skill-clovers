@@ -8,7 +8,7 @@ export default function WebViewPaymentScreen({ route, navigation }) {
   const [loading, setLoading] = useState(true);
 
   // Razorpay WebView URL
-  const razorpayURL = `http://192.168.1.3:4007/payment-webview?orderId=${orderId}&amount=${amount}&userId=${userId}&courseId=${courseId}&domainId=${domainId}`;
+  const razorpayURL = `http://192.168.1.4:4007/payment-webview?orderId=${orderId}&amount=${amount}&userId=${userId}&courseId=${courseId}&domainId=${domainId}`;
 
   console.log('Razorpay WebView URL:', razorpayURL);
   console.log('Video Access:', videoAccess);
